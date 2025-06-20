@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mariela Chipana | Community Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="profile" id="profile-aside" aria-label="Perfil">
+      <header>
+        <div class="profile-img">
+          <img
+            src="./WIN_20250314_10_04_08_Pro.jpg"
+            alt="Mariela Chipana Callisaya"
+          />
+        </div>
+        <div>
+          <h2>Mariela Chipana Callisaya</h2>
+          <p class="role">Community Manager & Influencer</p>
+        </div>
+        <button
+          id="toggleMoreInfo"
+          aria-label="Mostrar información de contacto"
+        >
+          <span>☰</span>
+        </button>
+      </header>
+      <div class="moreinfo">
+        <hr />
+        <div class="info-cards">
+          <div class="info-card">
+            <img
+              src="/envelope-solid.svg"
+              alt="Marketing Digital"
+              class="service-icon"
+            />
+            <div>
+              <h3>email</h3>
+              <p>mariela.chipana.c18@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <img
+              src="/phone-solid.svg"
+              alt="Community Management"
+              class="service-icon"
+            />
+            <div>
+              <h3>telefono</h3>
+              <p>(+591) 123-4567</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <img
+              src="/location-dot-solid.svg"
+              alt="Community Management"
+              class="service-icon"
+            />
+            <div>
+              <h3>ubicacion</h3>
+              <p>Santa Cruz - Bolivia</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <nav class="social-links" aria-label="Redes sociales">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            title="LinkedIn"
+            rel="noopener"
+          >
+            <img src="/linkedin-in-brands.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+            title="Tiktok"
+            rel="noopener"
+          >
+            <img src="/tiktok-brands.svg" alt="Tiktok" />
+          </a>
+          <a href="mailto:tuemail@ejemplo.com" title="Email">
+            <img src="/envelope-solid.svg" alt="Email" />
+          </a>
+        </nav>
+      </div>
+    </aside>
+    <main class="content">
+      <nav class="nav" aria-label="Secciones principales">
+        <ul>
+          <li>
+            <a
+              href="#"
+              onclick="showSection('about', event)"
+              id="nav-about"
+              class="active"
+              >Sobre Mi</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('resume', event)" id="nav-resume"
+              >Currículum</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="showSection('projects', event)"
+              id="nav-projects"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('contact', event)" id="nav-contact"
+              >Contáctame</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-list">
+          <li>
+            <a
+              href="#"
+              onclick="showSection('about', event)"
+              id="nav-about-mobile"
+              class="active"
+              >Sobre Mi</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section
+        id="about"
+        class="main-section active"
+        aria-labelledby="about-title"
+      >
+        <h1 id="about-title">Sobre Mi</h1>
+        <p>
+          ¡Hola! Soy una apasionada Community Manager con una energía imparable
+          y mil ideas para potenciar marcas en el mundo digital. Me encanta
+          crear estrategias creativas en redes sociales, conectar con las
+          personas y analizar métricas para lograr campañas de publicidad
+          realmente efectivas. Siempre busco nuevas tendencias y herramientas
+          para que cada proyecto brille y crezca. ¡Juntos podemos llevar tu
+          presencia online al siguiente nivel!
+        </p>
+        <div class="section-odometer">
+          <div class="container-odometer">
+            <h3>70K+</h3>
+            <p>Seguidores</p>
+          </div>
+          <div class="container-odometer">
+            <h3>1500+</h3>
+            <p>Contenido</p>
+          </div>
+          <div class="container-odometer">
+            <h3>8+</h3>
+            <p>Clientes Satisfechos</p>
+          </div>
+        </div>
+        <h2 id="tools-title">Herramientas que más uso</h2>
+
+        <div class="logos">
+          <div class="logos-slider" id="carouselTrack">
+            <img src="/capcut.jpg" alt="CapCut" class="tool-icon" />
+            <img src="/tiktok-ads.png" alt="Tiktok Ads" class="tool-icon" />
+            <img src="/canva-logo.png" alt="Canva" class="tool-icon" />
+            <img src="/facebook-ads.png" alt="Facebook Ads" class="tool-icon" />
+            <img
+              src="/instagram-ads.webp"
+              alt="Instagram Ads"
+              class="tool-icon"
+            />
+          </div>
+          <div class="logos-slider" id="carouselTrack">
+            <img src="/capcut.jpg" alt="CapCut" class="tool-icon" />
+            <img src="/tiktok-ads.png" alt="Tiktok Ads" class="tool-icon" />
+            <img src="/canva-logo.png" alt="Canva" class="tool-icon" />
+            <img src="/facebook-ads.png" alt="Facebook Ads" class="tool-icon" />
+            <img
+              src="/instagram-ads.webp"
+              alt="Instagram Ads"
+              class="tool-icon"
+            />
+          </div>
+        </div>
+        <div class="container-services services">
+          <h2 id="services-title title">Servicios que ofrezco</h2>
+          <div class="services-cards">
+            <div class="service-card">
+              <img
+                src="/redes_sociales.jpg"
+                alt="Redes Sociales"
+                class="service-icon"
+              />
+              <h3>Gestión de redes sociales</h3>
+              <p>
+                Administración profesional de tus perfiles para aumentar tu
+                presencia y engagement.
+              </p>
+            </div>
+            <div class="service-card">
+              <img
+                src="/creacion_contenido.png"
+                alt="Contenido"
+                class="service-icon"
+              />
+              <h3>Creación de contenido</h3>
+              <p>
+                Diseño de imágenes, videos y textos creativos adaptados a tu
+                marca.
+              </p>
+            </div>
+            <div class="service-card">
+              <img
+                src="/estrategia_marketing.webp"
+                alt="Marketing Digital"
+                class="service-icon"
+              />
+              <h3>Estrategias de marketing digital</h3>
+              <p>
+                Planificación y ejecución de campañas para lograr tus objetivos
+                comerciales.
+              </p>
+            </div>
+            <div class="service-card">
+              <img
+                src="/atencion_cliente.jpg"
+                alt="Atención al cliente"
+                class="service-icon"
+              />
+              <h3>Atención al cliente</h3>
+              <p>
+                Gestión de mensajes, comentarios y construcción de comunidad
+                online.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="brand-logos-section">
+          <h2 class="brand-logos-title">Marcas con las que he colaborado</h2>
+          <div class="brand-logo-container">
+            <div class="logos-container">
+              <img src="/terramia-logo.png" alt="Terramia" class="brand-logo" />
+              <img src="/marfa-logo.png" alt="Terramia 2" class="brand-logo" />
+              <img
+                src="/purofuego-logo.png"
+                alt="Empresa 3"
+                class="brand-logo"
+              />
+              <img
+                src="/clinicadentalprovida-logo.jpg"
+                alt="Empresa 4"
+                class="brand-logo"
+              />
+              <img
+                src="/jardindonbosco-logo.jpg"
+                alt="Empresa 4"
+                class="brand-logo"
+              />
+              <img src="angelica-logo.jpg" alt="Empresa 4" class="brand-logo" />
+              <img
+                src="/torresproducciones-logo.jpg"
+                alt="Empresa 4"
+                class="brand-logo"
+              />
+              <img
+                src="/clinicamesocruz-logo.jpg"
+                alt="Empresa 5"
+                class="brand-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume" class="main-section" aria-labelledby="resume-title">
+        <h1 id="resume-title">Currículum</h1>
+        <p>
+          <!-- Aquí tu información de experiencia, estudios, etc. -->
+          Experiencia en gestión de comunidades, campañas digitales, creación de
+          contenido y atención al cliente para marcas de diversos sectores.
+        </p>
+      </section>
+      <section
+        id="projects"
+        class="main-section"
+        aria-labelledby="projects-title"
+      >
+        <h1 id="projects-title">Proyectos</h1>
+        <p>
+          <!-- Aquí tus proyectos destacados -->
+          He colaborado en campañas exitosas para marcas locales e
+          internacionales, logrando crecimiento orgánico y engagement real.
+        </p>
+      </section>
+      <section
+        id="contact"
+        class="main-section"
+        aria-labelledby="contact-title"
+      >
+        <h1 id="contact-title">Contáctame</h1>
+        <p>
+          ¿Quieres impulsar tu marca? ¡Escríbeme! <br />
+          <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+        </p>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // ...existing code...
+        const toggleBtn = document.getElementById("toggleMoreInfo");
+        const moreInfo = document.querySelector(".moreinfo");
+        if (toggleBtn && moreInfo) {
+          toggleBtn.addEventListener("click", function () {
+            moreInfo.classList.toggle("show");
+          });
+        }
+      });
+      // Animación de contador para los h3 de .section-odometer
+      function animateCounter(element, end, duration = 1500) {
+        let start = 0;
+        let startTimestamp = null;
+        const suffix = element.dataset.suffix || "";
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          let value = Math.floor(progress * (end - start) + start);
+          if (suffix.includes("K")) {
+            element.textContent = value + "K+";
+          } else if (suffix.includes("+")) {
+            element.textContent = value + "+";
+          } else {
+            element.textContent = value;
+          }
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            element.textContent = end + suffix;
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+      function startCounters() {
+        document.querySelectorAll(".section-odometer h3").forEach((h3) => {
+          let value = h3.textContent.replace(/[^\d]/g, "");
+          let suffix = h3.textContent.replace(/[\d]/g, "");
+          h3.dataset.suffix = suffix;
+          animateCounter(h3, parseInt(value, 10));
+        });
+      }
+      // Navegación y visibilidad de secciones/asides
+      function showSection(sectionId, event) {
+        if (event) event.preventDefault();
+        document.querySelectorAll(".main-section").forEach((sec) => {
+          sec.classList.remove("active");
+        });
+        document.getElementById(sectionId).classList.add("active");
+        document
+          .querySelectorAll("nav.nav a")
+          .forEach((a) => a.classList.remove("active"));
+        document.getElementById("nav-" + sectionId).classList.add("active");
+        // Responsive: mostrar aside solo en "about" en móvil
+        if (window.innerWidth <= 600) {
+          if (sectionId === "about") {
+            document.body.classList.add("show-aside");
+          } else {
+            document.body.classList.remove("show-aside");
+          }
+        }
+        // Inicia la animación solo si es la sección about
+        if (sectionId === "about") {
+          startCounters();
+        }
+      }
+      // Al cargar la página, aplica la lógica inicial
+      window.addEventListener("DOMContentLoaded", function () {
+        showSection("about");
+        window.addEventListener("resize", function () {
+          const visibleSection = document.querySelector(".main-section.active");
+          if (visibleSection) {
+            showSection(visibleSection.id);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

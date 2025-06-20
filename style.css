@@ -1,0 +1,525 @@
+/* configuracion CSS general */
+:root {
+  --primary: #0077b6;
+  --secondary: #00b4d8;
+  --accent: #90e0ef;
+  --bg: #f6fafd;
+  --white: #fff;
+  --gray: #e9ecef;
+  --text: #222;
+  --green: hsl(118, 64%, 44%);
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  display: flex;
+  align-items: start;
+  background: var(--white);
+  min-height: 100dvh;
+  min-width: 100dvh;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  margin: 32px 0;
+}
+/* contacto lateral CSS */
+
+aside.profile {
+  position: sticky;
+  top: 0px;
+  margin-left: 35px;
+  align-self: flex-start;
+  width: 40%;
+  background: var(--gray);
+  padding: 32px 18px;
+  text-align: center;
+  border-right: 1px solid #d1d1d1;
+  z-index: 10;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s;
+}
+.profile-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--green);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 14px;
+}
+.profile h2 {
+  margin: 10px 0 4px 0;
+  font-size: 1.3em;
+  color: var(--primary);
+}
+.role {
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 4px;
+}
+.location {
+  color: #555;
+  font-size: 0.98em;
+  margin-bottom: 12px;
+}
+.social-links {
+  margin: 18px 0 0 0;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 7px;
+  transition: transform 0.2s;
+}
+.social-links a:hover {
+  transform: scale(1.15);
+}
+.social-links img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+main.content {
+  margin-left: 30px;
+  width: 60%;
+  padding: 36px 32px 24px 32px;
+  background: var(--white);
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 32px;
+  font-weight: 500;
+  font-size: 1.08em;
+  transition: color 0.2s;
+}
+nav.nav {
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px 32px;
+  display: flex;
+  border-radius: 8px;
+}
+nav.nav ul {
+  flex: 1;
+  list-style: none;
+  text-align: right;
+}
+nav.nav .mobile-list {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: var(--white);
+  margin-right: 16px;
+}
+nav.nav ul li {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+nav.nav a:hover,
+nav.nav a.active {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+section.main-section {
+  display: none;
+  max-width: auto;
+
+  margin-top: 18px;
+}
+section.main-section.active {
+  display: block;
+}
+.section-odometer {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 32px 0 24px 0;
+}
+.container-odometer {
+  background: var(--gray);
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 18px 28px;
+  text-align: center;
+  min-width: 110px;
+}
+.section-odometer h3 {
+  font-size: 2.2em;
+  color: var(--primary);
+  margin: 0 0 6px 0;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.section-odometer p {
+  margin: 0;
+  color: #444;
+  font-size: 1em;
+  font-weight: 500;
+}
+/* Servicios CSS */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 9%;
+  background: linear-gradient(to right, var(--bg), var(--white));
+  box-sizing: border-box;
+  color: var(--text);
+  text-align: center;
+}
+.services .services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.services .services-cards .service-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid #e0e0e0;
+}
+.services .services-cards .service-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background: var(--gray);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  object-fit: contain;
+}
+.services .services-cards .service-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px) scale(1.02);
+}
+/* Tarjeta de servicio CSS */
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.info-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  min-width: 0;
+  width: 90%;
+  max-width: 320px;
+  margin: 0 auto;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.info-card img.service-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--gray);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.info-card h3 {
+  margin: 0 0 2px 0;
+  font-size: 1em;
+  color: var(--primary);
+  text-align: left;
+  font-weight: 600;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 0.97em;
+  color: #444;
+  text-align: left;
+  word-break: break-all;
+}
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: var(--white);
+  white-space: nowrap;
+  position: relative;
+}
+.logos-slider {
+  display: inline-block;
+  animation: infinite-scroll 10s linear infinite;
+}
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.logos::before {
+  left: 0;
+  background: linear-gradient(to right, var(--white), rgba(255, 255, 255, 0));
+}
+.logos::after {
+  right: 0;
+  background: linear-gradient(to left, var(--white), rgba(255, 255, 255, 0));
+}
+.logos:hover .logos-slider {
+  animation-play-state: paused;
+}
+.logos-slider img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.brand-logo {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 200px;
+  min-width: 100px;
+  margin: 10px;
+  scroll-snap-align: center;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.brand-logo:hover {
+  filter: none;
+}
+.brand-logo {
+  min-width: 100px;
+  margin: 0 10px;
+  scroll-snap-align: center;
+}
+#toggleMoreInfo {
+  display: none;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 0;
+  transition: background 0.2s;
+}
+#toggleMoreInfo:active {
+  background: var(--secondary);
+}
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+hr {
+  border: none;
+  border-top: 1px solid #d1d1d1;
+  margin: 18px 0;
+}
+@media screen and (max-width: 900px) {
+  /* ...existing code... */
+  #toggleMoreInfo {
+    display: none;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 0;
+    transition: background 0.2s;
+  }
+  #toggleMoreInfo:active {
+    background: var(--secondary);
+  }
+  @media screen and (max-width: 600px) {
+    #toggleMoreInfo {
+      display: block;
+    }
+    .moreinfo {
+      display: none;
+    }
+    .moreinfo.show {
+      display: block;
+    }
+  }
+  body {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    min-width: 0;
+  }
+  .services .services-cards .service-card img {
+    width: 48px;
+    height: 48px;
+  }
+  aside.profile,
+  main.content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  aside.profile {
+    border-right: none;
+    border-bottom: 1px solid #d1d1d1;
+    position: static;
+    top: auto;
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 0;
+  }
+  aside.profile header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: left;
+  }
+  .profile-img {
+    flex-shrink: 0;
+  }
+  /* Agrupa h2 y p en columna */
+  .profile-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  aside.profile header h2,
+  aside.profile header .role {
+    text-align: center;
+    margin: 0;
+  }
+  .profile-img img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 0;
+  }
+  .moreinfo {
+    display: none;
+  }
+  main.content {
+    border-radius: 0 0 18px 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .services-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .service-card {
+    max-width: 100%;
+  }
+  nav.nav {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .brand-logo {
+    width: 100px;
+    max-width: 100px;
+    min-width: 60px;
+    margin: 6px;
+  }
+  body {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    min-width: 0;
+  }
+  aside.profile,
+  main.content {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 0;
+  }
+  aside.profile {
+    border-bottom: 1px solid #d1d1d1;
+    border-radius: 0;
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+  main.content {
+    padding: 80px 6px 18px 6px;
+    border-radius: 0;
+  }
+  nav.nav ul {
+    display: none;
+  }
+  nav.nav .mobile-list {
+    display: block;
+  }
+  nav.nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    border-radius: 0;
+    text-align: center;
+    background: var(--primary);
+    z-index: 100;
+    margin-bottom: 0;
+    padding: 10px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  }
+  nav.nav a {
+    margin: 0 10px;
+    font-size: 1.1em;
+  }
+  .section-odometer {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .container-odometer {
+    min-width: 80px;
+    padding: 14px 12px;
+    border-radius: 0%;
+  }
+  .section-odometer h3 {
+    font-size: 1.5em;
+  }
+  .services .services-cards .service-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
