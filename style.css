@@ -22,7 +22,13 @@ body {
   border-radius: 18px;
   box-shadow: var(--shadow);
   margin: 32px 0;
+  overflow-y: scroll;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
 /* contacto lateral CSS */
 
 aside.profile {
@@ -97,27 +103,26 @@ a {
   transition: color 0.2s;
 }
 nav.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background: var(--primary);
   color: var(--white);
-  padding: 12px 32px;
-  display: flex;
+  padding: 12px 12px 12px 12px;
   border-radius: 8px;
-}
-nav.nav ul {
-  flex: 1;
-  list-style: none;
+  margin-bottom: 24px;
   text-align: right;
+  gap: 18px;
 }
-nav.nav .mobile-list {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5em;
+
+nav.nav a {
   color: var(--white);
-  margin-right: 16px;
-}
-nav.nav ul li {
-  display: inline-block;
+  text-decoration: none;
   margin-left: 24px;
+  font-weight: 500;
+  font-size: 1.08em;
+  transition: color 0.2s;
+  display: inline-block;
 }
 
 nav.nav a:hover,
@@ -450,7 +455,38 @@ hr {
     max-width: 100%;
   }
   nav.nav {
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: var(--primary);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    z-index: 100;
+    overflow: visible;
+  }
+  nav.nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    padding: 12px 0;
+    font-size: 1.1em;
+    border-radius: 0;
+    background: none;
+    width: 100%;
+    height: 48px;
+    transition: color 0.2s, background 0.2s;
+  }
+  nav.nav a.active,
+  nav.nav a:hover {
+    color: var(--accent);
+    text-decoration: none;
   }
 }
 
@@ -483,29 +519,7 @@ hr {
     padding: 80px 6px 18px 6px;
     border-radius: 0;
   }
-  nav.nav ul {
-    display: none;
-  }
-  nav.nav .mobile-list {
-    display: block;
-  }
-  nav.nav {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    border-radius: 0;
-    text-align: center;
-    background: var(--primary);
-    z-index: 100;
-    margin-bottom: 0;
-    padding: 10px 0;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
-  }
-  nav.nav a {
-    margin: 0 10px;
-    font-size: 1.1em;
-  }
+
   .section-odometer {
     flex-direction: column;
     gap: 0px;
