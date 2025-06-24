@@ -345,39 +345,181 @@
           </div>
         </div>
       </section>
-      <section id="resume" class="main-section" aria-labelledby="resume-title">
-        <h1 id="resume-title">Currículum</h1>
+      <section
+        id="resume"
+        class="main-section"
+        aria-labelledby="resume-title"
+        style="text-align: center; padding: 50px"
+      >
+        <div class="construction-icon">🚧</div>
+        <h3>Esta sección está en construcción</h3>
+        <p>Estamos trabajando para traerte una mejor experiencia.</p>
+        <div class="timer-container" data-end="2025-06-24T23:59:59">
+          <div class="timer">
+            <div class="time-unit">
+              <span class="time-number" data-days>00</span>
+              <span class="time-label">Días</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-hours>00</span>
+              <span class="time-label">Horas</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-minutes>00</span>
+              <span class="time-label">Min</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-seconds>00</span>
+              <span class="time-label">Seg</span>
+            </div>
+          </div>
+        </div>
+        <p class="message">
+          💡 Mientras tanto, puedes explorar otras secciones de mi portfolio
+        </p>
+
+        <!-- <h1 id="resume-title">Currículum</h1>
         <p>
-          <!-- Aquí tu información de experiencia, estudios, etc. -->
+          Aquí tu información de experiencia, estudios, etc. 
           Experiencia en gestión de comunidades, campañas digitales, creación de
           contenido y atención al cliente para marcas de diversos sectores.
         </p>
+        -->
       </section>
       <section
         id="projects"
         class="main-section"
         aria-labelledby="projects-title"
+        style="text-align: center; padding: 50px"
       >
-        <h1 id="projects-title">Proyectos</h1>
-        <p>
-          <!-- Aquí tus proyectos destacados -->
+        <div class="construction-icon">🚧</div>
+        <h3>Esta sección está en construcción</h3>
+        <p>Estamos trabajando para traerte una mejor experiencia.</p>
+        <div class="timer-container" data-end="2025-06-25T11:59:59">
+          <div class="timer">
+            <div class="time-unit">
+              <span class="time-number" data-days>00</span>
+              <span class="time-label">Días</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-hours>00</span>
+              <span class="time-label">Horas</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-minutes>00</span>
+              <span class="time-label">Min</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-seconds>00</span>
+              <span class="time-label">Seg</span>
+            </div>
+          </div>
+        </div>
+        <p class="message">
+          💡 Mientras tanto, puedes explorar otras secciones de mi portfolio
+        </p>
+        <!--<h1 id="projects-title">Proyectos</h1>
+        <p> 
           He colaborado en campañas exitosas para marcas locales e
           internacionales, logrando crecimiento orgánico y engagement real.
-        </p>
+        </p>-->
       </section>
       <section
         id="contact"
         class="main-section"
         aria-labelledby="contact-title"
+        style="text-align: center; padding: 50px"
       >
-        <h1 id="contact-title">Contáctame</h1>
-        <p>
-          ¿Quieres impulsar tu marca? ¡Escríbeme! <br />
-          <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+        <div class="construction-icon">🚧</div>
+        <h3>Esta sección está en construcción</h3>
+        <p>Estamos trabajando para traerte una mejor experiencia.</p>
+        <div class="timer-container" data-end="2025-06-26T11:59:59">
+          <div class="timer">
+            <div class="time-unit">
+              <span class="time-number" data-days>00</span>
+              <span class="time-label">Días</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-hours>00</span>
+              <span class="time-label">Horas</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-minutes>00</span>
+              <span class="time-label">Min</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" data-seconds>00</span>
+              <span class="time-label">Seg</span>
+            </div>
+          </div>
+        </div>
+        <p class="message">
+          💡 Mientras tanto, puedes explorar otras secciones de mi portfolio
         </p>
       </section>
     </main>
     <script>
+      function startTimer(container) {
+        const endDateStr = container.getAttribute("data-end");
+        const endDate = new Date(endDateStr);
+
+        function updateTimer() {
+          const now = new Date();
+          const diff = endDate - now;
+          if (diff <= 0) {
+            container.querySelector("[data-days]").textContent = "00";
+            container.querySelector("[data-hours]").textContent = "00";
+            container.querySelector("[data-minutes]").textContent = "00";
+            container.querySelector("[data-seconds]").textContent = "00";
+            return;
+          }
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+
+          container.querySelector("[data-days]").textContent = String(
+            days
+          ).padStart(2, "0");
+          container.querySelector("[data-hours]").textContent = String(
+            hours
+          ).padStart(2, "0");
+          container.querySelector("[data-minutes]").textContent = String(
+            minutes
+          ).padStart(2, "0");
+          container.querySelector("[data-seconds]").textContent = String(
+            seconds
+          ).padStart(2, "0");
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+      }
+
+      // Inicializa todos los timers en la página
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".timer-container").forEach(startTimer);
+      });
+
+      // Actualizar cada segundo
+      updateTimer();
+      setInterval(updateTimer, 1000);
+
+      // Efecto de escritura para el subtítulo
+      const subtitle = document.querySelector(".subtitle");
+      const originalText = subtitle.innerHTML;
+      subtitle.innerHTML = "";
+
+      let i = 0;
+      function typeWriter() {
+        if (i < originalText.length) {
+          subtitle.innerHTML = originalText.slice(0, i + 1);
+          i++;
+          setTimeout(typeWriter, 50);
+        }
+      }
+
+      setTimeout(typeWriter, 1000);
       document.addEventListener("DOMContentLoaded", function () {
         // ...existing code...
         const toggleBtn = document.getElementById("toggleMoreInfo");
